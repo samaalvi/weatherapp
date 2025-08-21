@@ -6,7 +6,7 @@ function App() {
   const [weathers, setWeathers] = useState([]);
   useEffect(() => {
     (async () => {
-      const response = await fetch("http://localhost:3000/");
+      const response = await fetch("https://68a5ea1c2a3deed2960f5591.mockapi.io/weatherr");
       const js = await response.json();
       setWeathers(js);
     })();
